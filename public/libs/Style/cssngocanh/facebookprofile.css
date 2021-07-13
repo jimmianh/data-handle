@@ -1,0 +1,112 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+.pickAvatar {
+    height: 100px;
+    width: 100px;
+    border: black 1px solid;
+    font-size: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    margin: 10px 2px 0 50px;
+    cursor: pointer;
+}
+.pickCoverPhoto{
+    height: 100px;
+    width: 100px;
+    border: black 1px solid;
+    font-size: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    margin: 10px 2px 0 50px;
+    cursor: pointer;
+}
+.avatar{
+    display: none;
+}
+.coverPhoto{
+    display: none;
+}
+p {
+    display: inline;
+    margin-left: 10px;
+}
+input {
+    margin-top: 10px;
+}
+.col-8{
+    height: 800px;
+    padding: 0!important;
+}
+.col-8>div {
+    padding: 0!important;
+}
+.showCoverPhoto {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    border: #f65757 3px solid;
+}
+.showAvatar{
+    transform: translateY(-150px);
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: #ffffff 5px solid;
+}
+
+.avatar {
+    transform: translateY(-100px);
+}
+.properties {
+    transform: translateY(-100px);
+}
+.properties>p {
+    transform: translateX(-15px);
+}
+.error{
+    color: #f65757;
+    font-size: 14px;
+}
+.information{
+    margin-right: 500px;
+}
+.content{
+    border: #0b2e13 1px solid;
+}
+.avatar-mini{
+    width: 50px;
+    height: 50px;
+    border: dodgerblue 2px solid;
+    border-radius: 50%;
+}
+.hidden,.content,.content>div{
+    padding: 0;
+}
+.content-area{
+    padding: 5px 5px 0 5px;
+}
+.content>div{
+    padding-bottom: 5px;
+}
+.img-content{
+    width: 100%;
+}
+.add-stt{
+    transform:translateX(550px) translateY(-150px);
+}
+textarea{
+    height: 200px;
+}
+.newFeed{
+    transform:translateX(410px) translateY(-100px);
+    width: 100%;
+}
