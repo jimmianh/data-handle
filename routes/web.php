@@ -48,15 +48,16 @@ use Illuminate\Support\Facades\Route;
 //    Route::post('/login',[\App\Http\Controllers\facebook_ngoc_anh_controller::class,'login'])->name('login');
 //});
 // Router của Ngọc Anh
-//Route::get('/index',[\App\Http\Controllers\facebook_ngoc_anh_controller::class,'viewIndex'])->name('ngocanhIndex');
-//Route::post('/register',[\App\Http\Controllers\facebook_ngoc_anh_controller::class,'viewRegister'])->name('ngocanhregister');
-//Route::post('/login',[\App\Http\Controllers\facebook_ngoc_anh_controller::class,'login'])->name('ngocanhLogin');
-//Route::get('/profile',[\App\Http\Controllers\facebook_ngoc_anh_controller::class,'profile'])->name('ngocanhProfile');
-//Route::post('/add-status',[\App\Http\Controllers\facebook_ngoc_anh_controller::class,'addStatus'])->name('addStatus');
-//Route::get('/home',[\App\Http\Controllers\facebook_ngoc_anh_controller::class,'home'])->name('home');
-//Route::get('/logout',[\App\Http\Controllers\facebook_ngoc_anh_controller::class,'logout'])->name('logout');
+Route::get('/index',[\App\Http\Controllers\facebook_ngoc_anh_controller::class,'viewIndex'])->name('ngocanhIndex');
+Route::post('/register',[\App\Http\Controllers\facebook_ngoc_anh_controller::class,'viewRegister'])->name('ngocanhregister');
+Route::post('/login',[\App\Http\Controllers\facebook_ngoc_anh_controller::class,'login'])->name('ngocanhLogin');
+Route::get('/profile',[\App\Http\Controllers\facebook_ngoc_anh_controller::class,'profile'])->name('ngocanhProfile');
+Route::post('/add-status',[\App\Http\Controllers\facebook_ngoc_anh_controller::class,'addStatus'])->name('addStatus');
+Route::get('/home',[\App\Http\Controllers\facebook_ngoc_anh_controller::class,'home'])->name('home');
+Route::get('/logout',[\App\Http\Controllers\facebook_ngoc_anh_controller::class,'logout'])->name('logout');
 //bai tap ve nha
-Route::get('/data-handle/{id}/path',[\App\Http\Controllers\DataHandleController::class,'handlePathVariable']);
-Route::get('/data-handle/query-string',[\App\Http\Controllers\DataHandleController::class,'handleQueryString']);
-Route::get('data-handle/form',[\App\Http\Controllers\DataHandleController::class,'returnForm']);
-Route::post('data-handle/form',[\App\Http\Controllers\DataHandleController::class,'processForm']);
+//Route::get('/data-handle/{id}/path',[\App\Http\Controllers\DataHandleController::class,'handlePathVariable']);
+//Route::get('/data-handle/query-string',[\App\Http\Controllers\DataHandleController::class,'handleQueryString']);
+//Route::get('data-handle/form',[\App\Http\Controllers\DataHandleController::class,'returnForm']);
+//Route::post('data-handle/form',[\App\Http\Controllers\DataHandleController::class,'processForm']);
+Route::get('',[\App\Http\Controllers\LayoutController::class,'masterLayout']);

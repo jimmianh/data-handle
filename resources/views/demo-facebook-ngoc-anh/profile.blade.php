@@ -57,7 +57,7 @@
             <div class="col-12">
                 <div class="col-12 row top-profile">
                     <img class="avatar-mini"
-                         src="https://scontent-hkg4-1.xx.fbcdn.net/v/t1.6435-9/197617556_1178016082714339_417680565459927733_n.jpg?_nc_cat=102&ccb=1-3&_nc_sid=09cbfe&_nc_ohc=gtv1TiQf9tAAX-0a5BX&_nc_ht=scontent-hkg4-1.xx&oh=e76d3e69dbf5101884169a5605bd066c&oe=60EE873F"
+                         src="{{$user->avatar}}"
                          alt="avatar">
                     <p>{{$user->firstName}} {{$user->lastName}}<br><span>{{$user->articles[$i]->created_at}}</span></p>
                 </div>
