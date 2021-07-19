@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\ProductController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -61,3 +62,10 @@ Route::get('/logout',[\App\Http\Controllers\facebook_ngoc_anh_controller::class,
 //Route::get('data-handle/form',[\App\Http\Controllers\DataHandleController::class,'returnForm']);
 //Route::post('data-handle/form',[\App\Http\Controllers\DataHandleController::class,'processForm']);
 Route::get('',[\App\Http\Controllers\LayoutController::class,'masterLayout']);
+
+Route::get('/admin/product/create',[ProductController::class,'create'])->name('create');
+Route::post('/admin/product/create',[ProductController::class,'store'])->name('store');
+Route::get('/admin/product/list',[ProductController::class,'index'])->name('index');
+Route::get('/admin/product/edit/{id}',[ProductController::class,'edit'])->name('edit');
+Route::post('/admin/product/edit/{id}',[ProductController::class,'update'])->name('update');
+Route::get('/admin/product/delete/{id}',[ProductController::class,'destroy'])->name('delete');
